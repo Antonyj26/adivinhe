@@ -1,69 +1,46 @@
-# React + TypeScript + Vite
+🧩✨ Advinhe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um jogo de adivinhação de palavras — descubra a palavra oculta letra por letra!
+Desenvolvido em React + TypeScript + Vite e hospedado na Vercel 🚀
 
-Currently, two official plugins are available:
+🎮 Demonstração
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+👉 Jogar agora
 
-## Expanding the ESLint configuration
+https://adivinhe-theta.vercel.app
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+🧠 Sobre o jogo
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+O Advinhe é um jogo inspirado no clássico forca, em que o jogador deve descobrir a palavra secreta digitando uma letra por vez.
+Cada rodada começa com uma dica, ajudando o jogador a chegar à resposta certa.
+Teste seus conhecimentos, desafie seus amigos e divirta-se!
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+⚙️ Tecnologias utilizadas
+Tecnologia	Descrição
+⚛️ React	Biblioteca para construção da interface
+⚡ Vite	Ferramenta para desenvolvimento rápido
+🟦 TypeScript	Tipagem estática e maior segurança no código
+🎨 CSS3	Estilização leve e responsiva
+☁️ Vercel	Hospedagem e deploy da aplicação
+💡 Funcionalidades
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+✅ Exibição dinâmica de dicas e letras descobertas
+✅ Validação automática das tentativas
+✅ Mensagens de acerto e erro
+✅ Reinício automático após o acerto
+✅ Interface limpa, leve e responsiva
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+🧩 Como jogar
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+O jogo começa com uma dica sobre a palavra oculta.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Digite uma letra e envie sua tentativa.
+
+As letras corretas aparecem na palavra; as erradas permanecem ocultas.
+
+Continue até descobrir a palavra inteira! 🎉
+
+🖼️ Prévia
+
+<img width="868" height="860" alt="{F0B4C88E-2D06-4E72-AEE6-7DEB7AA2F0A2}" src="https://github.com/user-attachments/assets/372a4921-9f85-48b2-8fb8-86dd863af35c" />
+
